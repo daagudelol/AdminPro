@@ -11,16 +11,6 @@ import { RegisterComponent } from './register/register.component';
 
 
 const appRoutes: Routes = [
-    {
-        path: '',
-        component: PagesComponent,
-        children: [
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'progres', component: ProgressComponent },
-            { path: 'graficas1', component: Graficas1Component },
-            { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-        ]
-    },
     {path: 'register', component: RegisterComponent},
     { path: 'login', component: LoginComponent },
     { path: '**', component: PagenotfoundComponent}
